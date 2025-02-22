@@ -31,6 +31,8 @@ pgpassword - namespace za nase key-value parove
 key - PGPASSWORD
 value - 12345asdf
 
+mypgpassword123 je za Google Cloud
+
 
 ------
 Kubeernetes Services:
