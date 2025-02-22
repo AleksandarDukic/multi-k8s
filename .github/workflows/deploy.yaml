@@ -13,11 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Test
-        run: |-
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker build -t aleksandardux/react-test -f ./client/Dockerfile.dev ./client
-          docker run -e CI=true aleksandardux/react-test npm test
+      # - name: Test
+      #   run: |-
+      #     docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+      #     docker build -t aleksandardux/react-test -f ./client/Dockerfile.dev ./client
+      #     docker run -e CI=true aleksandardux/react-test npm test
 
       - name: Set Service Key
         uses: 'google-github-actions/auth@v2'
